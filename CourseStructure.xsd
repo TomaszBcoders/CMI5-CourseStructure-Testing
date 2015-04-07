@@ -1,0 +1,60 @@
+<xs:schema xmlns="http://aicc.org/CMI5/CourseStructure.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://aicc.org/CMI5/CourseStructure.xsd" elementFormDefault="qualified" id="CMI5CourseStructure">
+	<xs:element name="courseStructure" type="courseType"/>
+	<xs:complexType name="courseType">
+		<xs:sequence minOccurs="1" maxOccurs="1">
+			<xs:element name="course" minOccurs="1" maxOccurs="1">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="title" minOccurs="1" maxOccurs="1"/>
+						<xs:element name="description" minOccurs="1" maxOccurs="1"/>
+					</xs:sequence>
+                    <xs:attribute name="id" type="xs:anyURI" use="required" />
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="block" type="blockType" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="blockType">
+		<xs:sequence maxOccurs="unbounded">
+			<xs:element name="title" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="description" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="objectives" type="objectivesType" minOccurs="0" maxOccurs="1" />
+			<xs:element name="au" type="auType" minOccurs="0"/>
+			<xs:element name="block" minOccurs="0">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="blockType"/>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="auType">
+		<xs:sequence>
+			<xs:element name="activityId" minOccurs="1" maxOccurs="1"/>			
+			<xs:element name="title" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="url" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="launchParameters" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="launchMethod" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="masteryScore" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="moveOn" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="authenticationMethod" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="entitlementKey" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="description" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="objectives" minOccurs="0" maxOccurs="unbounded" type="objectivesType" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="objectivesType">
+		<xs:sequence>
+			<xs:element name="objective" minOccurs="1" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="objectiveID" minOccurs="1" maxOccurs="1"/>
+						<xs:element name="objectiveTitle" minOccurs="1" maxOccurs="1"/>
+						<xs:element name="objectiveDescription" minOccurs="1" maxOccurs="1"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

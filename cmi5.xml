@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<courseStructure xmlns="http://aicc.org/CMI5/CourseStructure.xsd">
+    <course id="http://example.com/courses/f59c9fc0-6f63-4c51-a186-ff08eef4c91c">
+        <title>
+            <langstring lang="en-US">This is a course title</langstring>
+            <langstring lang="es-MX">Se trata de un t&#195;&#173;tulo del curso</langstring>
+        </title>
+        <description>
+            No language used.
+        </description>
+    </course>
+    <block>
+        <title />
+        <description />
+        <block>
+            <title />
+            <description />
+            <au>
+                <activityId />
+                <title />
+                <url />
+                <launchParameters />
+                <launchMethod />
+                <masteryScore />
+                <moveOn />
+                <authenticationMethod />
+                <entitlementKey />
+                <description />
+                <objectives>
+                    <objective>
+                        <objectiveID></objectiveID>
+                        <objectiveTitle></objectiveTitle>
+                        <objectiveDescription></objectiveDescription>
+                    </objective>
+                </objectives>
+            </au>
+        </block>
+
+    </block>
+
+</courseStructure>
