@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- The following is a cmi5 course structure file which is using as many features as possible -->
-<courseStructure xmlns="http://aicc.org/CMI5/CourseStructure.xsd">
+<courseStructure xmlns="http://aicc.org/CMI5/CourseStructure.xsd" xmlns:xml="http://www.w3.org/XML/1998/namespace">
     <course id="http://example.com/courses/f59c9fc0">
         <title>This is a course title</title>
-        <description>
-            No language used.
-        </description>
+        <description>No language used.</description>
     </course>
     <block>
         <title />
@@ -15,7 +13,7 @@
             <description />
             <au id="http://example.com/courses/f59c9fc0/au/6f63" moveOn="Completed" masteryScore="0.3" launchMethod="AnyWindow" authenticationMethod="Basic">
                 <title />
-                <url />
+                <url>a</url>
                 <launchParameters />
                 <entitlementKey />
                 <description />
@@ -28,7 +26,7 @@
             </au>
             <au id="http://example.com/courses/f59c9fc0/au/6f63">
                 <title></title>
-                <url></url>
+                <url>b</url>
                 <launchParameters></launchParameters>
                 <entitlementKey></entitlementKey>
                 <description></description>
