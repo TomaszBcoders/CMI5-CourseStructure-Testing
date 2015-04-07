@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The following file is the most simple cmi5.xml file possible -->
+<courseStructure xmlns="http://aicc.org/CMI5/CourseStructure.xsd">
+    <course id="">
+        <title></title>
+        <description></description>
+    </course>
+    <block>
+        <title></title>
+        <description></description>
+    </block>
+</courseStructure>
