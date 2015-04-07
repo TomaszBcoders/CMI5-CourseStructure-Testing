@@ -1,60 +1,93 @@
-<xs:schema xmlns="http://aicc.org/CMI5/CourseStructure.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://aicc.org/CMI5/CourseStructure.xsd" elementFormDefault="qualified" id="CMI5CourseStructure">
-	<xs:element name="courseStructure" type="courseType"/>
-	<xs:complexType name="courseType">
-		<xs:sequence minOccurs="1" maxOccurs="1">
-			<xs:element name="course" minOccurs="1" maxOccurs="1">
-				<xs:complexType>
-					<xs:sequence>
-						<xs:element name="title" minOccurs="1" maxOccurs="1"/>
-						<xs:element name="description" minOccurs="1" maxOccurs="1"/>
-					</xs:sequence>
+<xs:schema xmlns="http://aicc.org/CMI5/CourseStructure.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://aicc.org/CMI5/CourseStructure.xsd" elementFormDefault="qualified"
+           id="CMI5CourseStructure">
+    <xs:element name="courseStructure" type="courseType"/>
+    <xs:complexType name="courseType">
+        <xs:sequence minOccurs="1" maxOccurs="1">
+            <xs:element name="course" minOccurs="1" maxOccurs="1">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="title" minOccurs="1" maxOccurs="1"/>
+                        <xs:element name="description" minOccurs="1" maxOccurs="1"/>
+                    </xs:sequence>
+                    <xs:attribute name="id" type="xs:anyURI" use="required"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="block" type="blockType" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="blockType">
+        <xs:sequence maxOccurs="unbounded">
+            <xs:element name="title" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="description" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="objectives" type="objectivesType" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="au" type="auType" minOccurs="0"/>
+            <xs:element name="block" minOccurs="0">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:extension base="blockType"/>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="auType">
+        <xs:sequence>
+            <xs:element name="title" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="url" minOccurs="1" maxOccurs="1" type="xs:anyURI"/>
+            <xs:element name="launchParameters" minOccurs="1" maxOccurs="1"/>
+            <!--<xs:element name="launchMethod" minOccurs="1" maxOccurs="1"/>-->
+            <!--<xs:element name="masteryScore" minOccurs="1" maxOccurs="1"/>-->
+            <!--<xs:element name="moveOn" minOccurs="1" maxOccurs="1"/>-->
+            <!--<xs:element name="authenticationMethod" minOccurs="1" maxOccurs="1"/>-->
+            <xs:element name="entitlementKey" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="description" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="objectives" minOccurs="0" maxOccurs="unbounded" type="objectivesType"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:anyURI" use="required"/>
+        <xs:attribute name="moveOn" type="moveOn" default="Not Applicable"/>
+        <xs:attribute name="masteryScore" type="score" use="optional" />
+        <xs:attribute name="authenticationMethod" type="authenticationMethod" default="Basic" />
+        <xs:attribute name="launchMethod" type="launchMethod" default="AnyWindow" />
+     </xs:complexType>
+    <xs:complexType name="objectivesType">
+        <xs:sequence>
+            <xs:element name="objective" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="title" minOccurs="1" maxOccurs="1"/>
+                        <xs:element name="description" minOccurs="1" maxOccurs="1"/>
+                    </xs:sequence>
                     <xs:attribute name="id" type="xs:anyURI" use="required" />
-				</xs:complexType>
-			</xs:element>
-			<xs:element name="block" type="blockType" minOccurs="1" maxOccurs="1"/>
-		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="blockType">
-		<xs:sequence maxOccurs="unbounded">
-			<xs:element name="title" minOccurs="1" maxOccurs="1"/>
-			<xs:element name="description" minOccurs="1" maxOccurs="1"/>
-			<xs:element name="objectives" type="objectivesType" minOccurs="0" maxOccurs="1" />
-			<xs:element name="au" type="auType" minOccurs="0"/>
-			<xs:element name="block" minOccurs="0">
-				<xs:complexType>
-					<xs:complexContent>
-						<xs:extension base="blockType"/>
-					</xs:complexContent>
-				</xs:complexType>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="auType">
-		<xs:sequence>
-			<xs:element name="activityId" minOccurs="1" maxOccurs="1"/>			
-			<xs:element name="title" minOccurs="1" maxOccurs="1"/>
-			<xs:element name="url" minOccurs="1" maxOccurs="1"/>
-			<xs:element name="launchParameters" minOccurs="1" maxOccurs="1"/>
-			<xs:element name="launchMethod" minOccurs="1" maxOccurs="1"/>
-			<xs:element name="masteryScore" minOccurs="1" maxOccurs="1"/>
-			<xs:element name="moveOn" minOccurs="1" maxOccurs="1"/>
-			<xs:element name="authenticationMethod" minOccurs="1" maxOccurs="1"/>
-			<xs:element name="entitlementKey" minOccurs="1" maxOccurs="1"/>
-			<xs:element name="description" minOccurs="1" maxOccurs="1"/>
-			<xs:element name="objectives" minOccurs="0" maxOccurs="unbounded" type="objectivesType" />
-		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="objectivesType">
-		<xs:sequence>
-			<xs:element name="objective" minOccurs="1" maxOccurs="unbounded">
-				<xs:complexType>
-					<xs:sequence>
-						<xs:element name="objectiveID" minOccurs="1" maxOccurs="1"/>
-						<xs:element name="objectiveTitle" minOccurs="1" maxOccurs="1"/>
-						<xs:element name="objectiveDescription" minOccurs="1" maxOccurs="1"/>
-					</xs:sequence>
-				</xs:complexType>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="moveOn">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Not Applicable"/>
+            <xs:enumeration value="Passed"/>
+            <xs:enumeration value="Completed"/>
+            <xs:enumeration value="Completed And Passed"/>
+            <xs:enumeration value="Completed Or Passed"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="score">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="authenticationMethod">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Basic" />
+            <xs:enumeration value="OAuth" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="launchMethod">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="AnyWindow" />
+            <xs:enumeration value="OwnWindow" />
+        </xs:restriction>
+    </xs:simpleType>
 </xs:schema>
