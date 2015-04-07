@@ -6,31 +6,46 @@
         <description>No language used.</description>
     </course>
     <block>
-        <title />
+        <title>Example Block</title>
         <description />
         <block>
             <title />
             <description />
             <au id="http://example.com/courses/f59c9fc0/au/6f63" moveOn="Completed" masteryScore="0.3" launchMethod="AnyWindow" authenticationMethod="Basic">
-                <title />
+                <title>Example A</title>
                 <url>a</url>
                 <launchParameters />
                 <entitlementKey />
                 <description />
                 <objectives>
-                    <objective id="http://example.com/objectives/ff08eef4c91c">
-                        <title></title>
-                        <description></description>
+                    <objective id="http://example.com/objectives/local001">
+                        <title>Local Objective</title>
+                        <description>This is an local objective</description>
                     </objective>
+                    <objective ref="http://example.com/objectives/global001" />
                 </objectives>
             </au>
             <au id="http://example.com/courses/f59c9fc0/au/6f63">
-                <title></title>
+                <title>Example B</title>
                 <url>b</url>
                 <launchParameters></launchParameters>
                 <entitlementKey></entitlementKey>
                 <description></description>
+                <objectives>
+                    <objective ref="http://example.com/objectives/global001" />
+                    <objective ref="http://example.com/objectives/global002" />
+                </objectives>
             </au>
         </block>
     </block>
+    <objectives>
+        <objective id="http://example.com/objectives/global001">
+            <title>Global Objective #1</title>
+            <description>This is an global objective</description>
+        </objective>
+        <objective id="http://example.com/objectives/global002">
+            <title>Global Objective #2</title>
+            <description>This is another global objective</description>
+        </objective>
+    </objectives>
 </courseStructure>
