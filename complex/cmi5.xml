@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The following is a cmi5 course structure file which is using as many features as possible -->
+<courseStructure xmlns="http://aicc.org/CMI5/CourseStructure.xsd">
+    <course id="http://example.com/courses/f59c9fc0">
+        <title>
+            <langstring lang="en-US">
+                This is a course title
+            </langstring>
+        </title>
+        <description>
+            <langstring lang="en-US">Course Description</langstring>
+        </description>
+        <languages>en-US</languages>
+    </course>
+    <block id="string://asdf">
+        <title>
+            <langstring lang="en-US">Block title</langstring>
+        </title>
+        <description>
+            <langstring lang="en-US">Block description</langstring>
+        </description>
+        <objectives>
+            <objective/>
+        </objectives>
+        <block id="asdf//:ptth">
+            <title>
+                <langstring lang="en-US">Sub-block title</langstring>
+            </title>
+            <description>
+                <langstring lang="en-US">Sub-block description</langstring>
+            </description>
+            <au id="http://example.com/courses/f59c9fc0/au/6f63" moveOn="Completed" masteryScore="0.3"
+                launchMethod="AnyWindow" authenticationMethod="Basic">
+                <title>
+                    <langstring lang="en-US">Assignable unit #1 title</langstring>
+                </title>
+                <description>
+                    <langstring lang="en-US">Assignable unit #1 description</langstring>
+                </description>
+                <url>a</url>
+                <launchParameters/>
+                <entitlementKey/>
+            </au>
+            <au id="http://example.com/courses/f59c9fc0/au/6f64">
+                <title>
+                    <langstring lang="en-US">Assignable unit #2 title</langstring>
+                </title>
+                <description>
+                    <langstring lang="en-US">Assignable unit #2 description</langstring>
+                </description>
+                <url>b</url>
+                <launchParameters></launchParameters>
+                <entitlementKey></entitlementKey>
+            </au>
+        </block>
+        <au id="http://example.com/courses/f59c9fc0/au/6f64">
+            <title>
+                <langstring lang="en-US">Assignable unit #3 title</langstring>
+            </title>
+            <description>
+                <langstring lang="en-US">Assignable unit #3 description</langstring>
+            </description>
+            <url>b</url>
+            <launchParameters></launchParameters>
+            <entitlementKey></entitlementKey>
+        </au>
+    </block>
+    <objectives>
+        <objective id="http://example.com/objectives/ff08eef4c91c">
+            <title>
+                <langstring lang="en-US">Objective title</langstring>
+            </title>
+            <description>
+                <langstring lang="en-US">Objective description</langstring>
+            </description>
+        </objective>
+        <objective id="http://example.com/objectives/ff08eef4c91d">
+            <title>
+                <langstring lang="en-US">Another objective title</langstring>
+            </title>
+            <description>
+                <langstring lang="en-US">Another objective description</langstring>
+            </description>
+        </objective>
+    </objectives>
+</courseStructure>

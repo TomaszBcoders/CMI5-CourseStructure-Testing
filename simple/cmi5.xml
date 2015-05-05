@@ -1,12 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- The following file is the most simple cmi5.xml file possible -->
 <courseStructure xmlns="http://aicc.org/CMI5/CourseStructure.xsd">
-    <course id="">
-        <title></title>
-        <description></description>
+    <course id="course">
+        <title>
+            <langstring lang="en-US">Course title</langstring>
+        </title>
+        <description>
+            <langstring lang="en-US">Course Description</langstring>
+        </description>
+        <languages>en-US de-DE</languages>
     </course>
-    <block>
-        <title></title>
-        <description></description>
+    <block id="block">
+        <title>
+            <langstring lang="en-US">Block title</langstring>
+        </title>
+        <description>
+            <langstring lang="en-US">Block title</langstring>
+        </description>
+        <au id="au">
+            <title>
+                <langstring lang="en-US">Assignable unit title</langstring>
+            </title>
+            <description>
+                <langstring lang="en-US">Assignable unit title</langstring>
+            </description>
+            <url>url</url>
+            <launchParameters></launchParameters>
+            <entitlementKey></entitlementKey>
+        </au>
     </block>
 </courseStructure>
