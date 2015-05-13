@@ -2,18 +2,19 @@
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
            targetNamespace="http://aicc.org/CMI5/ExampleExtension.xsd" elementFormDefault="qualified"
            id="CMI5ExampleExtension">
-    <xs:element name="example">
-        <xs:simpleType>
-            <xs:restriction base="xs:string">
-                <xs:minLength value="3"/>
-            </xs:restriction>
-        </xs:simpleType>
-    </xs:element>
-    <xs:attribute name="example">
-        <xs:simpleType>
-            <xs:restriction base="xs:integer">
-                <xs:totalDigits value="1"/>
-            </xs:restriction>
-        </xs:simpleType>
-    </xs:attribute>
+  <xs:import namespace="http://aicc.org/CMI5/CourseStructure.xsd" schemaLocation="CourseStructure.xsd"/>
+  <xs:element name="example">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:minLength value="3"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:attribute name="example">
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:totalDigits value="1"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
 </xs:schema>
