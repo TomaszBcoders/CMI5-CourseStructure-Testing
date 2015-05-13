@@ -25,8 +25,6 @@
                 <langstring lang="en-US">Assignable unit title</langstring>
             </description>
             <url>url</url>
-            <launchParameters></launchParameters>
-            <entitlementKey></entitlementKey>
         </au>
     </block>
 </courseStructure>

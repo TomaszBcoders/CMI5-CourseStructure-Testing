@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The following file is a course structure with extension -->
+<courseStructure xmlns="http://aicc.org/CMI5/CourseStructure.xsd" xmlns:ex="http://aicc.org/CMI5/ExampleExtension.xsd">
+    <course id="course" ex:example="3">
+        <title ex:example="4">
+            <langstring lang="en-US">Course title</langstring>
+        </title>
+        <description ex:example="5">
+            <langstring lang="en-US" ex:example="3">Course Description</langstring>
+        </description>
+        <languages ex:example="3">en-US de-DE</languages>
+    </course>
+    <block id="block" ex:example="4">
+        <title ex:example="5">
+            <langstring ex:example="3" lang="en-US">Block title</langstring>
+        </title>
+        <description ex:example="4">
+            <langstring ex:example="5" lang="en-US">Block title</langstring>
+            <ex:example>Example #2</ex:example>
+        </description>
+        <au id="au">
+            <title>
+                <langstring lang="en-US">Assignable unit title</langstring>
+            </title>
+            <description>
+                <langstring lang="en-US">Assignable unit title</langstring>
+            </description>
+            <url>url</url>
+            <ex:example>Example!</ex:example>
+        </au>
+        <ex:example>Another example</ex:example>
+    </block>
+    <objectives>
+        <objective id="">
+            <title>
+                <langstring></langstring>
+            </title>
+            <description>
+                <langstring></langstring>
+            </description>
+        </objective>
+    </objectives>
+    <ex:example>Just an example</ex:example>
+    <ex:example>And another example</ex:example>
+</courseStructure>

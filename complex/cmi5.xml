@@ -6,11 +6,15 @@
             <langstring lang="en-US">
                 This is a course title
             </langstring>
+            <langstring lang="de-DE">
+                Das ist der Kurstitel
+            </langstring>
         </title>
         <description>
             <langstring lang="en-US">Course Description</langstring>
+            <langstring lang="de-DE">Das ist die Kursbeschreibung</langstring>
         </description>
-        <languages>en-US</languages>
+        <languages>en-US de-DE</languages>
     </course>
     <block id="string://asdf">
         <title>
