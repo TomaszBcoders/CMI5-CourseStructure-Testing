@@ -1,8 +1,8 @@
-<xs:schema xmlns="http://aicc.org/CMI5/ExampleExtension.xsd"
+<xs:schema xmlns="http://www.adlnet.gov/cmi5/ExampleExtension.xsd"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           targetNamespace="http://aicc.org/CMI5/ExampleExtension.xsd" elementFormDefault="qualified"
+           targetNamespace="http://www.adlnet.gov/cmi5/ExampleExtension.xsd" elementFormDefault="qualified"
            id="CMI5ExampleExtension">
-  <xs:import namespace="http://aicc.org/CMI5/CourseStructure.xsd" schemaLocation="CourseStructure.xsd"/>
+  <xs:import namespace="http://www.adlnet.gov/cmi5/CourseStructure.xsd" schemaLocation="CourseStructure.xsd"/>
   <xs:element name="example">
     <xs:simpleType>
       <xs:restriction base="xs:string">
