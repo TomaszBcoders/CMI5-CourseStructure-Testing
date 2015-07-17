@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- The following file is the most simple cmi5.xml file possible -->
 <courseStructure xmlns="http://www.adlnet.gov/cmi5/CourseStructure.xsd">
-  <course id="course">
+  <course id="http://course-repository.example.edu/identifiers/courses/02baafcf">
     <title>
-      <langstring lang="en-US">Course title</langstring>
+      <langstring lang="en-US">Introduction to Geology</langstring>
     </title>
     <description>
-      <langstring lang="en-US">Course Description</langstring>
+      <langstring lang="en-US">This course will introduce you into the basics of geology. This includes subjects such as plate tectonics, geological materials and the history of the Earth.</langstring>
     </description>
-    <languages>en-US de-DE</languages>
+    <languages>en-US</languages>
   </course>
-  <au id="au">
+  <au id="http://course-repository.example.edu/identifiers/courses/02baafcf/aus/4c07">
     <title>
-      <langstring lang="en-US">Assignable unit title</langstring>
+      <langstring lang="en-US">Introduction to Geology</langstring>
     </title>
     <description>
-      <langstring lang="en-US">Assignable unit title</langstring>
+      <langstring lang="en-US">This course will introduce you into the basics of geology. This includes subjects such as plate tectonics, geological materials and the history of the Earth.</langstring>
     </description>
-    <url>url</url>
+    <url>http://course-repository.example.edu/identifiers/courses/02baafcf/aus/4c07/launch.html</url>
   </au>
 </courseStructure>

@@ -1,80 +1,191 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- The following is a cmi5 course structure file which is using as many features as possible -->
 <courseStructure xmlns="http://www.adlnet.gov/cmi5/CourseStructure.xsd">
-  <course id="http://example.com/courses/f59c9fc0">
+  <course id="http://course-repository.example.edu/identifiers/courses/d07e186b">
     <title>
       <langstring lang="en-US">
-        This is a course title
+        Geology
       </langstring>
       <langstring lang="de-DE">
-        Das ist der Kurstitel
+        Geologie
+      </langstring>
+      <langstring lang="fr-FR">
+        Géologie
       </langstring>
     </title>
     <description>
-      <langstring lang="en-US">Course Description</langstring>
-      <langstring lang="de-DE">Das ist die Kursbeschreibung</langstring>
+      <langstring lang="en-US">
+        Geology is an earth science comprising the study of solid earth, rhe rocks of which it is composed, and the proccesses
+        by which they change. Geology gives insight into the history of Earth by providing the primary evidence for plate
+        tectonics, the evolutionary history of live, and past climates. Geology is important for mineral and hydrocarbon exploration
+        and exploitation, evaluating water resources, understanding of natural hazards, the remediation of environmental problems,
+        and for providing insights into past climate change. Geology also plays a role in geotechnical engineering and is a
+        major academic discipline. (Source: https://en.wikipedia.org/wiki/Geology)
+      </langstring>
+      <langstring lang="de-DE">
+        Geologie ist eine Geowissenschaften, welche die Untersuchung der festen Erde, der Felsen, aus denen sie zusammengesetzt ist, und die Prozesse
+        durch die sie sich ändert, umfasst. Geologie gibt Einblick in die Geschichte der Erde. Sie bietet die primären Beweise für Plattentektonik,
+        die Evolutionsgeschichte des Lebens, und das Klima der Vergangenheit. Geologie ist wichtig für Mineral- und Kohlenwasserstoffexploration
+        und -gewinnung, die Bewertung der Wasserressourcen, das Verständnis von Naturgefahren, die Sanierung von Umweltproblemen,
+        und für Einblicke in Vergangenheit Klimawandel. Geologie spielt auch eine Rolle in der Geotechnik und ist ein
+        akademische Hauptdisziplin. (Quelle: https://en.wikipedia.org/wiki/Geology)
+      </langstring>
+      <langstring lang="fr-FR">
+        La géologie (du grec ancien gê, la Terre, et logos, le discours)note 1 est la science dont le principal objet d'étude est la Terre, et plus
+        particulièrement les parties directement observables de la lithosphère. Discipline majeure des sciences de la Terre, son principal objectif
+        est d'établir des hypothèses permettant d'expliquer l'agencement des roches et des structures les affectant et d'en reconstituer l'histoire,
+        à partir du modèle de la tectonique des plaques.
+        Par l'étendue de son champ d'étude, la géologie est une science disposant de nombreuses spécialités très variées et qui se retrouve au croisement
+        de nombreux domaines scientifiques, tels que la biologie, la physique, la chimie, la science des matériaux, la cosmologie, la climatologie,
+        l'hydrologie… souvent essentiels dans les études géologiques. (Source: https://fr.wikipedia.org/wiki/G%C3%A9ologie)
+      </langstring>
     </description>
-    <languages>en-US de-DE</languages>
+    <languages>en-US de-DE fr-FR</languages>
   </course>
+
   <objectives>
-    <objective id="http://example.com/objectives/ff08eef4c91c">
+
+    <objective id="http://learning-objectives.example.com/identifiers/geology/material-identification">
       <title>
-        <langstring lang="en-US">Objective title</langstring>
+        <langstring lang="en-US">Identification of common Earth materials</langstring>
+        <langstring lang="de-DE">Identifikation von üblichen Erdmaterialien</langstring>
+        <langstring lang="fr-FR">Identification des matériaux terrestres communes</langstring>
       </title>
       <description>
-        <langstring lang="en-US">Objective description</langstring>
+        <langstring lang="en-US">Knowledge about properties of minerals and methods to gather data about rocks.</langstring>
+        <langstring lang="de-DE">Wissen über Eigenschaften von Mineralien und Methoden um Daten über Steine zu sammeln.</langstring>
+        <langstring lang="fr-FR">La connaissance des propriétés des minéraux et des méthodes pour recueillir des données sur les rochers.</langstring>
       </description>
     </objective>
-    <objective id="http://example.com/objectives/ff08eef4c91d">
+
+    <objective id="http://course-repository.example.edu/identifiers/objectives/general/scientific-thinking-and-acting">
       <title>
-        <langstring lang="en-US">Another objective title</langstring>
+        <langstring lang="en-US">Scientific Thinking and Acting</langstring>
+        <langstring lang="de-DE">Wissenschaftliches Denken und Handeln</langstring>
+        <langstring lang="fr-FR">Pensée scientifique et intérim</langstring>
       </title>
       <description>
-        <langstring lang="en-US">Another objective description</langstring>
+        <langstring lang="en-US">Application of scientific methods to collect, prove and validate knowledge</langstring>
+        <langstring lang="de-DE">Anwendung wissenschaftlicher Methoden, um Wissen zu sammeln, zu beweisen und zu validieren</langstring>
+        <langstring lang="fr-FR">Application des méthodes scientifiques pour recueillir, prouver et de valider les connaissances</langstring>
       </description>
     </objective>
+
+    <objective id="http://course-repository.example.edu/identifiers/objectives/nature/natural-hazard-awareness">
+      <title>
+        <langstring lang="en-US">Natural hazards awareness</langstring>
+        <langstring lang="de-DE">Bewusstsein für Naturgefahren</langstring>
+        <langstring lang="fr-FR">Sensibilisation sur les dangers naturels</langstring>
+      </title>
+      <description>
+        <langstring lang="en-US">Be aware of natural hazards, their impact and mitigation.</langstring>
+        <langstring lang="de-DE">Bewusstsein für Naturgefahren, deren Auswirkungen und Schadensbegrenzung</langstring>
+        <langstring lang="fr-FR">Sensibilisation des risques naturels, de leur impact et d'atténuation.</langstring>
+      </description>
+    </objective>
+
+
   </objectives>
-  <block id="string://asdf">
+
+  <block id="http://course-repository.example.edu/identifiers/courses/d07e186b/blocks/001">
     <title>
-      <langstring lang="en-US">Block title</langstring>
+      <langstring lang="en-US">Geologic materials</langstring>
+      <langstring lang="de-DE">Einführung</langstring>
+      <langstring lang="fr-FR">Einführung</langstring>
     </title>
     <description>
-      <langstring lang="en-US">Block description</langstring>
+      <langstring lang="en-US">The majority of geological data comes from research on solid Earth materials. These typically fall into one of two categories: rock and unconsolidated material.</langstring>
+      <langstring lang="de-DE">Der Großteil der geologischen Daten stammt aus der Forschung von festen Erdmaterialien. Diese fallen in der Regel in eine von zwei Kategorien: Gestein und Lockergestein.</langstring>
+      <langstring lang="fr-FR">La majorité des données géologiques vient de la recherche sur les matériaux de la Terre solides. Ceux-ci tombent généralement dans l'une des deux catégories: rock et matériaux non consolidés.</langstring>
     </description>
     <objectives>
       <objective/>
     </objectives>
-    <block id="asdf//:ptth">
+    <au id="http://course-repository.example.edu/identifiers/courses/d07e186b/blocks/001/aus/64f6">
       <title>
-        <langstring lang="en-US">Sub-block title</langstring>
+        <langstring lang="en-US">Rock and rock cycle</langstring>
+        <langstring lang="de-DE">Gestein und Kreislauf der Gesteine</langstring>
+        <langstring lang="fr-FR">Roche et la cycle de la roche</langstring>
       </title>
       <description>
-        <langstring lang="en-US">Sub-block description</langstring>
+        <langstring lang="en-US">There are three major types of rock: igneous, sedimentary, and metamorphic. The rock cycle is an important concept in geology which illustrates the relationships between these three types of rock, and magma.</langstring>
+        <langstring lang="de-DE">Es gibt drei Hauptgesteinsarten: Magmatische, sedimentären und metamorphen. Der Kreislauf der Gesteine ist ein wichtiges Konzept in der Geologie, die die Beziehungen zwischen diesen drei Arten von Gestein und Magma darstellt.</langstring>
+        <langstring lang="fr-FR">Il existe trois grands types de roches: ignées, sédimentaires et métamorphiques. Le cycle des roches est un concept important en géologie qui illustre les relations entre ces trois types de roches, et le magma.</langstring>
       </description>
-      <au id="http://example.com/courses/f59c9fc0/au/6f63" moveOn="Completed" masteryScore="0.3"
-          launchMethod="AnyWindow" authenticationMethod="Basic">
-        <title>
-          <langstring lang="en-US">Assignable unit #1 title</langstring>
-        </title>
-        <description>
-          <langstring lang="en-US">Assignable unit #1 description</langstring>
-        </description>
-        <url>a</url>
-        <launchParameters/>
-        <entitlementKey/>
-      </au>
-      <au id="http://example.com/courses/f59c9fc0/au/6f64">
-        <title>
-          <langstring lang="en-US">Assignable unit #2 title</langstring>
-        </title>
-        <description>
-          <langstring lang="en-US">Assignable unit #2 description</langstring>
-        </description>
-        <url>b</url>
-        <launchParameters></launchParameters>
-        <entitlementKey></entitlementKey>
-      </au>
-    </block>
+      <url>http://course-repository.example.edu/identifiers/courses/d07e186b/blocks/001/aus/64f6/launch.html</url>
+      <launchParameters>{'initialSpeed':3.0,'mode':1}</launchParameters>
+      <entitlementKey>833d0c7c-a3f8-4f9b-a51f-cbd8a9dac9fb</entitlementKey>
+    </au>
+    <au id="http://course-repository.example.edu/identifiers/courses/d07e186b/blocks/001/aus/3ee0">
+      <title>
+        <langstring lang="en-US">Unconsolidated material</langstring>
+        <langstring lang="de-DE">Lockergestein</langstring>
+        <langstring lang="fr-FR">Matériaux Meubles</langstring>
+      </title>
+      <description>
+        <langstring lang="en-US">Geologists also study unlithified material, which typically comes from more recent deposits.</langstring>
+        <langstring lang="de-DE">Geologen studieren auch unverfestigtes Material, das in der Regel von jüngeren Ablagerungen herkommt.</langstring>
+        <langstring lang="fr-FR">Les géologues étudient également du matériel non lithifiées, qui provient généralement de dépôts plus récents.</langstring>
+      </description>
+      <url>http://course-repository.example.edu/identifiers/courses/d07e186b/blocks/001/aus/3ee0/launch.html</url>
+      <entitlementKey>833d0c7c-a3f8-4f9b-a51f-cbd8a9dac9fb</entitlementKey>
+    </au>
+  </block>
+
+  <block id="http://course-repository.example.edu/identifiers/courses/d07e186b/blocks/002">
+    <title>
+      <langstring lang="en-US">Whole-Earth structure</langstring>
+      <langstring lang="de-DE">Struktur der Erde</langstring>
+      <langstring lang="fr-FR">Toute la structure de la Terre</langstring>
+    </title>
+    <description>
+      <langstring lang="en-US"></langstring>
+      <langstring lang="de-DE"></langstring>
+      <langstring lang="fr-FR"></langstring>
+    </description>
+    <objectives>
+      <objective/>
+    </objectives>
+    <au id="http://example.com/courses/f59c9fc0/au/6f64">
+      <title>
+        <langstring lang="en-US">Plate tectonics</langstring>
+      </title>
+      <description>
+        <langstring lang="en-US">tbd</langstring>
+      </description>
+      <url>b</url>
+      <launchParameters>
+      </launchParameters>
+      <entitlementKey></entitlementKey>
+    </au>
+    <au id="http://example.com/courses/f59c9fc0/au/6f64">
+      <title>
+        <langstring lang="en-US">Earth structure</langstring>
+      </title>
+      <description>
+        <langstring lang="en-US">tbd</langstring>
+      </description>
+      <url>b</url>
+      <launchParameters>
+      </launchParameters>
+      <entitlementKey></entitlementKey>
+    </au>
+  </block>
+
+  <block id="http://course-repository.example.edu/identifiers/courses/d07e186b/blocks/003">
+    <title>
+      <langstring lang="en-US">Geologic time</langstring>
+      <langstring lang="de-DE">Geologische Zeit</langstring>
+      <langstring lang="fr-FR">Temps Géologique</langstring>
+    </title>
+    <description>
+      <langstring lang="en-US"></langstring>
+      <langstring lang="de-DE"></langstring>
+      <langstring lang="fr-FR"></langstring>
+    </description>
+    <objectives>
+      <objective/>
+    </objectives>
     <au id="http://example.com/courses/f59c9fc0/au/6f64">
       <title>
         <langstring lang="en-US">Assignable unit #3 title</langstring>
@@ -84,16 +195,20 @@
       </description>
       <url>b</url>
       <launchParameters>
-        {
-          "param1": "Lorem ipsum dolor sit amet",
-          "param2": [1,2,3,4,5],
-          "param3": {
-            "a": 1,
-            "b": 2
-          }
-        }
       </launchParameters>
       <entitlementKey></entitlementKey>
     </au>
   </block>
+  <au id="http://example.com/courses/f59c9fc0/au/6f64">
+    <title>
+      <langstring lang="en-US">Test</langstring>
+    </title>
+    <description>
+      <langstring lang="en-US">tdb</langstring>
+    </description>
+    <url>b</url>
+    <launchParameters>
+    </launchParameters>
+    <entitlementKey></entitlementKey>
+  </au>
 </courseStructure>
