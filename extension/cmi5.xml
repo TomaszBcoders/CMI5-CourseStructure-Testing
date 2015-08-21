@@ -9,7 +9,6 @@
     <description ex:example="5">
       <langstring lang="en-US" ex:example="3">Course Description</langstring>
     </description>
-    <languages ex:example="3">en-US de-DE</languages>
   </course>
   <objectives>
     <objective id="">

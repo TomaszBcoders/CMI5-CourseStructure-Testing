@@ -10,7 +10,6 @@
           <xs:sequence>
             <xs:element name="title" type="textType"/>
             <xs:element name="description" type="textType"/>
-            <xs:element name="languages" minOccurs="0" type="languagesType"></xs:element>
             <xs:group ref="anyElement"/>
           </xs:sequence>
           <xs:attributeGroup ref="anyAttribute"/>
